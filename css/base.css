@@ -1,0 +1,121 @@
+/* ============================================================
+   base.css
+   Tokens de diseño, reset global y tipografía base.
+   Importar PRIMERO antes que cualquier otro CSS.
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+
+/* ── Design tokens ─────────────────────────────────────── */
+:root {
+  --bg:       #070c18;
+  --surface:  #0c1220;
+  --surface2: #111928;
+  --border:   rgba(255, 255, 255, 0.08);
+  --accent:   #38bdf8;
+  --text:     #f0f4f8;
+  --muted:    #64748b;
+  --muted2:   #94a3b8;
+  --gap:      130px;   /* espaciado vertical entre secciones */
+  --r:        14px;    /* border-radius base */
+}
+
+/* ── Reset ──────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ── Body base ──────────────────────────────────────────── */
+body {
+  padding-top: 64px; /* compensar navbar fija */
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  cursor: none; /* reemplazado por cursor personalizado */
+}
+
+/* ── Animaciones de entrada (.fade-in) ──────────────────── */
+.fade-in {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Layout principal ───────────────────────────────────── */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+section {
+  padding: var(--gap) 0;
+  border-top: 1px solid var(--border);
+}
+
+/* ── Etiqueta de sección (01 // Sobre mí) ───────────────── */
+.section-label {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 56px;
+}
+
+.section-num {
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: rgba(56, 189, 248, 0.3);
+  letter-spacing: 1px;
+}
+
+.tag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+/* Línea decorativa después de la etiqueta */
+.section-label::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* ── Footer ─────────────────────────────────────────────── */
+footer {
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 32px 40px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--muted);
+}

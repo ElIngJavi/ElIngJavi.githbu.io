@@ -4,456 +4,310 @@
   <meta charset="UTF-8" />
   <title>Javier Carranza | Portafolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portafolio de Javier Carranza — Ingeniero en Sistemas Computacionales, Tijuana México." />
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="style.css" />
+
+  <!-- CSS modular -->
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/navbar.css" />
+  <link rel="stylesheet" href="css/hero.css" />
+  <link rel="stylesheet" href="css/sections.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
 <body>
 
-<!-- BARRA DE PROGRESO DE SCROLL -->
-<div id="scroll-progress"></div>
+  <!-- BARRA DE PROGRESO DE SCROLL -->
+  <div id="scroll-progress"></div>
 
-<!-- CURSOR PERSONALIZADO -->
-<div id="cursor"></div>
-<div id="cursor-trail"></div>
+  <!-- CURSOR PERSONALIZADO -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="nav-container">
-    <div class="logo">
-      <a href="#inicio">Javier Carranza</a>
-    </div>
-    <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="menu-icon">
-      <span></span><span></span><span></span>
-    </label>
-    <label for="menu-toggle" class="overlay"></label>
-    <nav>
-      <ul class="nav-links">
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#habilidades">Redes</a></li>
-        <li><a href="#proyectos">Proyectos</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<!-- HERO -->
-<section id="inicio" class="hero">
-  <div id="particles-js"></div>
-  <div class="hero-content">
-    <p class="hero-eyebrow">✦ Desarrollador · Tijuana, México</p>
-    <h1>Javier Antonio<br><em>Carranza Hernández</em></h1>
-    <p class="hero-sub">Ingeniero en Sistemas Computacionales. <span id="typewriter"></span></p>
-    <div class="hero-buttons">
-      <a href="#proyectos" class="btn">Ver proyectos</a>
-      <a href="CV_Javier_Carranza.pdf.pdf" class="btn btn-outline" download>Descargar CV</a>
-    </div>
-  </div>
-  <!-- Indicador de scroll -->
-  <div class="scroll-indicator">
-    <span>Scroll</span>
-    <div class="scroll-line"><div class="scroll-dot"></div></div>
-  </div>
-</section>
-
-<main>
-
-  <!-- STATS -->
-  <section class="stats-section fade-in">
-    <div class="stats-grid">
-      <div class="stat-item">
-        <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
-        <p>Años de experiencia</p>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="logo">
+        <a href="#inicio">Javier Carranza</a>
       </div>
-      <div class="stat-item">
-        <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
-        <p>Proyectos completados</p>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
-        <p>Clientes reales</p>
-      </div>
-      <div class="stat-item">
-        <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
-        <p>Compromiso en cada proyecto</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- SOBRE MÍ -->
-  <section id="sobre-mi" class="about fade-in">
-    <div class="section-label">
-      <span class="section-num">01</span>
-      <span class="tag">// Sobre mí</span>
-    </div>
-    <div class="about-grid">
-      <div class="about-left">
-        <h2>Conóceme<br><span>mejor</span></h2>
-        <div class="card">Soy Javier, desarrollador con experiencia en proyectos académicos, freelance y soporte técnico. Me enfoco en crear soluciones claras, funcionales y fáciles de mantener.</div>
-        <div class="card">He trabajado en desarrollo web, soporte IT y sistemas internos, combinando programación con atención a usuarios y procesos.</div>
-        <div class="card">Me adapto fácil a equipos de trabajo, priorizo la comunicación clara y la organización. Mi objetivo es crear software útil y duradero.</div>
-        <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
-      </div>
-      <div class="about-right">
-        <!-- Foto de perfil -->
-        <div class="profile-wrapper">
-          <div class="profile-photo">
-            <img src="Fotos/profile.jpg" alt="Javier Carranza" />
-          </div>
-          <div class="profile-badge">
-            <span>✦</span> Disponible para proyectos
-          </div>
-        </div>
-        <div class="skills-section">
-          <h3>Habilidades y herramientas</h3>
-          <div class="skills-block">
-            <h4>Frontend</h4>
-            <div class="skills">
-              <span class="skill">HTML5</span><span class="skill">CSS3</span>
-              <span class="skill">React</span><span class="skill">Bootstrap</span>
-            </div>
-          </div>
-          <div class="skills-block">
-            <h4>Backend</h4>
-            <div class="skills">
-              <span class="skill">Node.js</span><span class="skill">MySQL</span>
-              <span class="skill">Java</span><span class="skill">C++</span>
-              <span class="skill">Python</span><span class="skill">JavaScript</span>
-            </div>
-          </div>
-          <div class="skills-block">
-            <h4>Herramientas</h4>
-            <div class="skills">
-              <span class="skill">Git</span><span class="skill">GitHub</span>
-              <span class="skill">Visual Studio</span><span class="skill">Microsoft Office</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- REDES -->
-  <section id="habilidades" class="social-section fade-in">
-    <div class="section-label">
-      <span class="section-num">02</span>
-      <span class="tag">// Redes</span>
-    </div>
-    <div class="social-wrapper">
-      <div class="social-text">
-        <h2>Contenido<br>& Redes</h2>
-        <p>También comparto contenido sobre tecnología, proyectos y creatividad.</p>
-      </div>
-      <div class="social-grid">
-        <a href="https://www.youtube.com/@ElJaviDev" target="_blank" class="social-card">
-          <div class="icon"><img src="Fotos/profile2.jpg" alt="YouTube" /></div>
-          <div class="info"><h3>YouTube</h3><p>@ElJaviDev</p></div>
-        </a>
-        <a href="https://www.instagram.com/javiee_antonio/" target="_blank" class="social-card">
-          <div class="icon"><img src="Fotos/profile.jpg" alt="Instagram" /></div>
-          <div class="info"><h3>Instagram</h3><p>@javiee_antonio</p></div>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROYECTOS -->
-<section id="proyectos" class="projects-section fade-in">
-  <div class="section-label">
-    <span class="section-num">03</span>
-    <span class="tag">// Proyectos</span>
-  </div>
-  <div class="projects-grid">
-
-    <div class="project-card featured">
-      <div class="project-badge">⭐ Destacado</div>
-      <img src="Fotos/MariHev2.jpg" alt="MariHe App" />
-      <div class="project-content">
-        <h3>MariHe App — Sistema de Conteo de Productos</h3>
-        <p>Aplicación web fullstack para el conteo y registro de productos en tiempo real. Incluye autenticación JWT, roles de usuario, exportación a Excel y panel de administrador.</p>
-        <div class="project-tags">
-          <span>React 18</span><span>FastAPI</span><span>MongoDB</span>
-          <span>Python</span><span>Vercel</span><span>JWT</span>
-        </div>
-        <div class="project-links">
-          <a class="btn-sm" href="https://github.com/ElIngJavi/marihe-app" target="_blank">Código</a>
-          <a class="btn-sm outline" href="https://marihe-app.vercel.app/" target="_blank">Demo en vivo →</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="project-card">
-      <img src="Fotos/pagina.PNG" alt="Sitio Cervan Acces" />
-      <div class="project-content">
-        <h3>Sitio Empresarial – Cervan Acces</h3>
-        <p>Página web corporativa con galería de proyectos y formulario de contacto.</p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>Responsive</span><span>Form</span>
-        </div>
-        <div class="project-links">
-          <a class="btn-sm" href="#">Código</a>
-          <a class="btn-sm outline" href="#">Ver Sitio</a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-  <!-- EXPERIENCIA -->
-  <section id="experiencia" class="experience fade-in">
-    <div class="section-label">
-      <span class="section-num">04</span>
-      <span class="tag">// Experiencia</span>
-    </div>
-    <div class="experience-grid">
-      <div class="timeline">
-        <div class="job active">
-          <span class="year">2024 – 2025</span>
-          <h4>Inspector de Seguridad</h4>
-          <p>Trablisa · Tijuana</p>
-        </div>
-        <div class="job">
-          <span class="year">2023</span>
-          <h4>Desarrollador / Diseñador Web</h4>
-          <p>Cervan Acces · Tijuana</p>
-        </div>
-        <div class="job">
-          <span class="year">2022</span>
-          <h4>Desarrollador de Software</h4>
-          <p>MariHe · Tijuana</p>
-        </div>
-      </div>
-      <div class="detail">
-        <h2>Inspector de Seguridad Aeroportuaria</h2>
-        <h3>Trablisa — Tijuana, México &nbsp;·&nbsp; Dic 2024 – Dic 2025</h3>
-        <p class="description">Trabajo enfocado en la seguridad aeroportuaria, garantizando el cumplimiento de protocolos operativos mediante el uso de sistemas tecnológicos, control de accesos y atención directa a usuarios y autoridades.</p>
-        <h4>Responsabilidades</h4>
-        <ul class="checks">
-          <li>Seguimiento de procedimientos operativos y protocolos.</li>
-          <li>Uso de sistemas tecnológicos para control de accesos.</li>
-          <li>Atención a usuarios, personal interno y autoridades.</li>
-          <li>Reporte de incidencias y manejo de bitácoras.</li>
-          <li>Trabajo bajo presión y resolución de situaciones.</li>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span><span></span><span></span>
+      </label>
+      <label for="menu-toggle" class="overlay"></label>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#sobre-mi">Sobre mí</a></li>
+          <li><a href="#habilidades">Redes</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#experiencia">Experiencia</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
-        <h4>Tecnologías</h4>
-        <div class="tags">
-          <span>Sistemas de control</span><span>Bitácoras digitales</span>
-          <span>Equipos de verificación</span><span>Protocolos</span>
-        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div id="particles-js"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ Desarrollador · Tijuana, México</p>
+      <h1>Javier Antonio<br><em>Carranza Hernández</em></h1>
+      <p class="hero-sub">Ingeniero en Sistemas Computacionales. <span id="typewriter"></span></p>
+      <div class="hero-buttons">
+        <a href="#proyectos" class="btn">Ver proyectos</a>
+        <a href="CV_Javier_Carranza.pdf.pdf" class="btn btn-outline" download>Descargar CV</a>
       </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"><div class="scroll-dot"></div></div>
     </div>
   </section>
 
-  <!-- CONTACTO -->
-  <section id="contacto" class="contact-section fade-in">
-    <div class="section-label">
-      <span class="section-num">05</span>
-      <span class="tag">// Contacto</span>
-    </div>
-    <div class="contact-title">
-      <h2>Construyamos<br><span>juntos</span></h2>
-      <p class="subtitle">Conecta conmigo para tu próximo proyecto o colaboración.</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-info">
-        <h3>Información de contacto</h3>
-        <p>Disponible para proyectos freelance, oportunidades laborales o simplemente conectar.</p>
-        <div class="info-card">
-          <img src="Fotos/email.png" alt="Email" />
-          <div><h4>Email</h4><a href="mailto:javierchernandez201@gmail.com">javierchernandez201@gmail.com</a></div>
+  <main>
+
+    <!-- STATS -->
+    <section class="stats-section fade-in">
+      <div class="stats-grid">
+        <div class="stat-item">
+          <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
+          <p>Años de experiencia</p>
         </div>
-        <div class="info-card">
-          <img src="Fotos/lk.png" alt="LinkedIn" />
-          <div><h4>LinkedIn</h4><a href="https://linkedin.com/in/javierhrz" target="_blank">Javier Carranza</a></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+          <p>Proyectos completados</p>
         </div>
-        <div class="info-card">
-          <img src="Fotos/gt.png" alt="GitHub" />
-          <div><h4>GitHub</h4><a href="https://github.com/ElIngJavi" target="_blank">@ElIngJavi</a></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
+          <p>Clientes reales</p>
         </div>
-        <div class="info-card">
-          <img src="Fotos/ubi.png" alt="Ubicación" />
-          <div><h4>Ubicación</h4><span>Tijuana, México</span></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+          <p>Compromiso en cada proyecto</p>
         </div>
       </div>
-      <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-        <label for="nombre">Nombre completo</label>
-        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre completo" required />
-        <label for="correo">Email</label>
-        <input id="correo" name="email" type="email" placeholder="Tu correo" required />
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
-        <button type="submit">✈ Enviar mensaje</button>
-        <p class="safe-text">&lt;/&gt; Tus datos están seguros y no serán compartidos</p>
-      </form>
-    </div>
-  </section>
+    </section>
 
-</main>
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" class="about fade-in">
+      <div class="section-label">
+        <span class="section-num">01</span>
+        <span class="tag">// Sobre mí</span>
+      </div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2>Conóceme<br><span>mejor</span></h2>
+          <div class="card">Soy Javier, desarrollador con experiencia en proyectos académicos, freelance y soporte técnico. Me enfoco en crear soluciones claras, funcionales y fáciles de mantener.</div>
+          <div class="card">He trabajado en desarrollo web, soporte IT y sistemas internos, combinando programación con atención a usuarios y procesos.</div>
+          <div class="card">Me adapto fácil a equipos de trabajo, priorizo la comunicación clara y la organización. Mi objetivo es crear software útil y duradero.</div>
+          <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
+        </div>
+        <div class="about-right">
+          <div class="profile-wrapper">
+            <div class="profile-photo">
+              <img src="assets/img/profile.jpg" alt="Javier Carranza" />
+            </div>
+            <div class="profile-badge"><span>✦</span> Disponible para proyectos</div>
+          </div>
+          <div class="skills-section">
+            <h3>Habilidades y herramientas</h3>
+            <div class="skills-block">
+              <h4>Frontend</h4>
+              <div class="skills">
+                <span class="skill">HTML5</span><span class="skill">CSS3</span>
+                <span class="skill">React</span><span class="skill">Bootstrap</span>
+              </div>
+            </div>
+            <div class="skills-block">
+              <h4>Backend</h4>
+              <div class="skills">
+                <span class="skill">Node.js</span><span class="skill">MySQL</span>
+                <span class="skill">Java</span><span class="skill">C++</span>
+                <span class="skill">Python</span><span class="skill">JavaScript</span>
+              </div>
+            </div>
+            <div class="skills-block">
+              <h4>Herramientas</h4>
+              <div class="skills">
+                <span class="skill">Git</span><span class="skill">GitHub</span>
+                <span class="skill">Visual Studio</span><span class="skill">Microsoft Office</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<footer>
-  <p>© <span id="footer-year"></span> Javier Carranza &nbsp;·&nbsp; Hecho en Tijuana</p>
-</footer>
+    <!-- REDES -->
+    <section id="habilidades" class="social-section fade-in">
+      <div class="section-label">
+        <span class="section-num">02</span>
+        <span class="tag">// Redes</span>
+      </div>
+      <div class="social-wrapper">
+        <div class="social-text">
+          <h2>Contenido<br>& Redes</h2>
+          <p>También comparto contenido sobre tecnología, proyectos y creatividad.</p>
+        </div>
+        <div class="social-grid">
+          <a href="https://www.youtube.com/@ElJaviDev" target="_blank" class="social-card">
+            <div class="icon"><img src="assets/img/profile2.jpg" alt="YouTube" /></div>
+            <div class="info"><h3>YouTube</h3><p>@ElJaviDev</p></div>
+          </a>
+          <a href="https://www.instagram.com/javiee_antonio/" target="_blank" class="social-card">
+            <div class="icon"><img src="assets/img/profile.jpg" alt="Instagram" /></div>
+            <div class="info"><h3>Instagram</h3><p>@javiee_antonio</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
 
-<!-- SCRIPTS -->
-<script src="particles.js"></script>
-<script>
-/* ═══════════════════════════════
-   1. PARTICLES
-═══════════════════════════════ */
-window.addEventListener('load', function () {
-  if (typeof particlesJS === 'undefined') return;
-  particlesJS('particles-js', {
-    particles: {
-      number: { value: 70, density: { enable: true, value_area: 900 } },
-      color: { value: '#38bdf8' },
-      shape: { type: 'circle' },
-      opacity: { value: 0.22, random: true, anim: { enable: true, speed: 0.6, opacity_min: 0.05, sync: false } },
-      size: { value: 2.5, random: true, anim: { enable: false } },
-      line_linked: { enable: true, distance: 150, color: '#38bdf8', opacity: 0.10, width: 1 },
-      move: { enable: true, speed: 0.9, direction: 'none', random: true, straight: false, out_mode: 'out', bounce: false }
-    },
-    interactivity: {
-      detect_on: 'canvas',
-      events: { onhover: { enable: true, mode: 'grab' }, onclick: { enable: true, mode: 'push' }, resize: true },
-      modes: { grab: { distance: 180, line_linked: { opacity: 0.3 } }, push: { particles_nb: 3 } }
-    },
-    retina_detect: true
-  });
-});
+    <!-- PROYECTOS -->
+    <section id="proyectos" class="projects-section fade-in">
+      <div class="section-label">
+        <span class="section-num">03</span>
+        <span class="tag">// Proyectos</span>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card featured">
+          <div class="project-badge">⭐ Destacado</div>
+          <img src="assets/img/MariHev2.jpg" alt="MariHe App" />
+          <div class="project-content">
+            <h3>MariHe App — Sistema de Conteo de Productos</h3>
+            <p>Aplicación web fullstack para el conteo y registro de productos en tiempo real. Incluye autenticación JWT, roles de usuario, exportación a Excel y panel de administrador.</p>
+            <div class="project-tags">
+              <span>React 18</span><span>FastAPI</span><span>MongoDB</span>
+              <span>Python</span><span>Vercel</span><span>JWT</span>
+            </div>
+            <div class="project-links">
+              <a class="btn-sm" href="https://github.com/ElIngJavi/marihe-app" target="_blank">Código</a>
+              <a class="btn-sm outline" href="https://marihe-app.vercel.app/" target="_blank">Demo en vivo →</a>
+            </div>
+          </div>
+        </div>
+        <div class="project-card">
+          <img src="assets/img/pagina.PNG" alt="Sitio Cervan Acces" />
+          <div class="project-content">
+            <h3>Sitio Empresarial – Cervan Acces</h3>
+            <p>Página web corporativa con galería de proyectos y formulario de contacto.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>Responsive</span><span>Form</span>
+            </div>
+            <div class="project-links">
+              <a class="btn-sm" href="#">Código</a>
+              <a class="btn-sm outline" href="#">Ver Sitio</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-/* ═══════════════════════════════
-   2. AÑO DINÁMICO EN FOOTER
-═══════════════════════════════ */
-document.getElementById('footer-year').textContent = new Date().getFullYear();
+    <!-- EXPERIENCIA -->
+    <section id="experiencia" class="experience fade-in">
+      <div class="section-label">
+        <span class="section-num">04</span>
+        <span class="tag">// Experiencia</span>
+      </div>
+      <div class="experience-grid">
+        <div class="timeline">
+          <div class="job active">
+            <span class="year">2024 – 2025</span>
+            <h4>Inspector de Seguridad</h4>
+            <p>Trablisa · Tijuana</p>
+          </div>
+          <div class="job">
+            <span class="year">2023</span>
+            <h4>Desarrollador / Diseñador Web</h4>
+            <p>Cervan Acces · Tijuana</p>
+          </div>
+          <div class="job">
+            <span class="year">2022</span>
+            <h4>Desarrollador de Software</h4>
+            <p>MariHe · Tijuana</p>
+          </div>
+        </div>
+        <div class="detail">
+          <h2>Inspector de Seguridad Aeroportuaria</h2>
+          <h3>Trablisa — Tijuana, México &nbsp;·&nbsp; Dic 2024 – Dic 2025</h3>
+          <p class="description">Trabajo enfocado en la seguridad aeroportuaria, garantizando el cumplimiento de protocolos operativos mediante el uso de sistemas tecnológicos, control de accesos y atención directa a usuarios y autoridades.</p>
+          <h4>Responsabilidades</h4>
+          <ul class="checks">
+            <li>Seguimiento de procedimientos operativos y protocolos.</li>
+            <li>Uso de sistemas tecnológicos para control de accesos.</li>
+            <li>Atención a usuarios, personal interno y autoridades.</li>
+            <li>Reporte de incidencias y manejo de bitácoras.</li>
+            <li>Trabajo bajo presión y resolución de situaciones.</li>
+          </ul>
+          <h4>Tecnologías</h4>
+          <div class="tags">
+            <span>Sistemas de control</span><span>Bitácoras digitales</span>
+            <span>Equipos de verificación</span><span>Protocolos</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-/* ═══════════════════════════════
-   3. BARRA DE PROGRESO DE SCROLL
-═══════════════════════════════ */
-const progressBar = document.getElementById('scroll-progress');
-window.addEventListener('scroll', () => {
-  const total = document.documentElement.scrollHeight - window.innerHeight;
-  const progress = (window.scrollY / total) * 100;
-  progressBar.style.width = progress + '%';
-});
+    <!-- CONTACTO -->
+    <section id="contacto" class="contact-section fade-in">
+      <div class="section-label">
+        <span class="section-num">05</span>
+        <span class="tag">// Contacto</span>
+      </div>
+      <div class="contact-title">
+        <h2>Construyamos<br><span>juntos</span></h2>
+        <p class="subtitle">Conecta conmigo para tu próximo proyecto o colaboración.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <h3>Información de contacto</h3>
+          <p>Disponible para proyectos freelance, oportunidades laborales o simplemente conectar.</p>
+          <div class="info-card">
+            <img src="assets/img/email.png" alt="Email" />
+            <div><h4>Email</h4><a href="mailto:javierchernandez201@gmail.com">javierchernandez201@gmail.com</a></div>
+          </div>
+          <div class="info-card">
+            <img src="assets/img/lk.png" alt="LinkedIn" />
+            <div><h4>LinkedIn</h4><a href="https://linkedin.com/in/javierhrz" target="_blank">Javier Carranza</a></div>
+          </div>
+          <div class="info-card">
+            <img src="assets/img/gt.png" alt="GitHub" />
+            <div><h4>GitHub</h4><a href="https://github.com/ElIngJavi" target="_blank">@ElIngJavi</a></div>
+          </div>
+          <div class="info-card">
+            <img src="assets/img/ubi.png" alt="Ubicación" />
+            <div><h4>Ubicación</h4><span>Tijuana, México</span></div>
+          </div>
+        </div>
+        <form class="contact-form" action="https://formspree.io/f/xaqplbdp" method="POST">
+          <label for="nombre">Nombre completo</label>
+          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre completo" required />
+          <label for="correo">Email</label>
+          <input id="correo" name="email" type="email" placeholder="Tu correo" required />
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+          <button type="submit">✈ Enviar mensaje</button>
+          <p class="safe-text">&lt;/&gt; Tus datos están seguros y no serán compartidos</p>
+        </form>
+      </div>
+    </section>
 
-/* ═══════════════════════════════
-   4. CURSOR PERSONALIZADO
-═══════════════════════════════ */
-const cursor      = document.getElementById('cursor');
-const cursorTrail = document.getElementById('cursor-trail');
-let mouseX = 0, mouseY = 0;
-let trailX = 0, trailY = 0;
+  </main>
 
-document.addEventListener('mousemove', e => {
-  mouseX = e.clientX;
-  mouseY = e.clientY;
-  cursor.style.transform = `translate(${mouseX}px, ${mouseY}px)`;
-});
+  <footer>
+    <p>© <span id="footer-year"></span> Javier Carranza &nbsp;·&nbsp; Hecho en Tijuana</p>
+  </footer>
 
-// Trail con lag suave
-function animateTrail() {
-  trailX += (mouseX - trailX) * 0.12;
-  trailY += (mouseY - trailY) * 0.12;
-  cursorTrail.style.transform = `translate(${trailX}px, ${trailY}px)`;
-  requestAnimationFrame(animateTrail);
-}
-animateTrail();
+  <!-- Scripts modulares (orden importa) -->
+  <script src="js/particles.js"></script>
+  <script src="js/particles-config.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/typewriter.js"></script>
+  <script src="js/stats.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/experience.js"></script>
 
-// Agrandar cursor sobre links y botones
-document.querySelectorAll('a, button, .skill, .project-card, .social-card, .job').forEach(el => {
-  el.addEventListener('mouseenter', () => cursor.classList.add('cursor-hover'));
-  el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
-});
-
-// Ocultar cursor personalizado fuera de la ventana
-document.addEventListener('mouseleave', () => {
-  cursor.style.opacity = '0';
-  cursorTrail.style.opacity = '0';
-});
-document.addEventListener('mouseenter', () => {
-  cursor.style.opacity = '1';
-  cursorTrail.style.opacity = '1';
-});
-
-/* ═══════════════════════════════
-   5. ANIMACIONES DE ENTRADA
-═══════════════════════════════ */
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
-    }
-  });
-}, { threshold: 0.1 });
-
-document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-/* ═══════════════════════════════
-   6. CONTADOR DE STATS ANIMADO
-═══════════════════════════════ */
-const statObserver = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.querySelectorAll('.stat-number').forEach(el => {
-      const target = parseInt(el.dataset.target);
-      const duration = 1600;
-      const start = performance.now();
-      function update(now) {
-        const elapsed = now - start;
-        const progress = Math.min(elapsed / duration, 1);
-        // easeOutQuart
-        const ease = 1 - Math.pow(1 - progress, 4);
-        el.textContent = Math.floor(ease * target);
-        if (progress < 1) requestAnimationFrame(update);
-        else el.textContent = target;
-      }
-      requestAnimationFrame(update);
-    });
-    statObserver.unobserve(entry.target);
-  });
-}, { threshold: 0.5 });
-
-document.querySelectorAll('.stats-section').forEach(el => statObserver.observe(el));
-
-/* ═══════════════════════════════
-   7. EFECTO TYPEWRITER
-═══════════════════════════════ */
-const phrases = [
-  'Desarrollador Jr.',
-  'Soporte TI.',
-  'Freelancer.',
-  'Amante del código limpio.'
-];
-let phraseIndex = 0;
-let charIndex   = 0;
-let deleting    = false;
-const tw = document.getElementById('typewriter');
-
-function typewrite() {
-  const current = phrases[phraseIndex];
-  if (!deleting) {
-    tw.textContent = current.slice(0, ++charIndex);
-    if (charIndex === current.length) {
-      deleting = true;
-      setTimeout(typewrite, 1800);
-      return;
-    }
-  } else {
-    tw.textContent = current.slice(0, --charIndex);
-    if (charIndex === 0) {
-      deleting = false;
-      phraseIndex = (phraseIndex + 1) % phrases.length;
-    }
-  }
-  setTimeout(typewrite, deleting ? 45 : 80);
-}
-typewrite();
-
-</script>
 </body>
 </html>

@@ -1,0 +1,143 @@
+/* ============================================================
+   responsive.css
+   Media queries para tablet y móvil.
+   Debe cargarse ÚLTIMO para sobreescribir estilos base.
+   ============================================================ */
+
+/* ── Tablet (≤ 900px) ───────────────────────────────────── */
+@media (max-width: 900px) {
+  main { padding: 0 28px; }
+  .nav-container { padding: 0 28px; }
+
+  /* Grids de una columna */
+  .about-grid,
+  .social-wrapper,
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  /* Stats: 2x2 */
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+  .stat-item:nth-child(2) { border-right: none; }
+  .stat-item:nth-child(3),
+  .stat-item:nth-child(4) { border-top: 1px solid var(--border); }
+
+  /* Experiencia vertical */
+  .experience-grid { grid-template-columns: 1fr; }
+  .timeline { border-right: none; border-bottom: 1px solid var(--border); }
+  .detail { padding: 32px 24px; }
+
+  /* Proyectos una columna */
+  .projects-grid { grid-template-columns: 1fr; }
+
+  /* Perfil alineado a la izquierda */
+  .profile-wrapper { justify-content: flex-start; }
+}
+
+/* ── Móvil (≤ 600px) ────────────────────────────────────── */
+@media (max-width: 600px) {
+  :root { --gap: 80px; }
+
+  main { padding: 0 20px; }
+  .nav-container {
+    padding: 0 20px;
+    position: relative;
+  }
+
+  /* Restaurar cursor nativo */
+  body { cursor: auto; }
+
+  /* Stats 2x2 también en móvil */
+  .stats-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* ── Menú hamburguesa ─────────────────────────────────── */
+  .menu-icon {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1002;
+  }
+
+  .menu-icon span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--text);
+    border-radius: 2px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+  /* Animación X al abrir */
+  #menu-toggle:checked ~ .menu-icon span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  #menu-toggle:checked ~ .menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+  #menu-toggle:checked ~ .menu-icon span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+  /* Menú lateral deslizante */
+  .nav-links {
+    position: fixed;
+    top: 64px;
+    left: 0;
+    height: calc(100vh - 64px);
+    width: 260px;
+    background: var(--bg);
+    flex-direction: column;
+    gap: 0;
+    padding: 20px 0;
+    transform: translateX(-100%);
+    transition: transform 0.35s cubic-bezier(0.77, 0, 0.175, 1);
+    border-right: 1px solid var(--border);
+    z-index: 1000;
+  }
+
+  .nav-links li { width: 100%; }
+
+  .nav-links a {
+    display: block;
+    padding: 13px 26px;
+    font-size: 0.92rem;
+    border-left: 2px solid transparent;
+    transition: color 0.2s, border-color 0.2s;
+  }
+
+  .nav-links a:hover {
+    color: var(--accent);
+    border-left-color: var(--accent);
+  }
+
+  #menu-toggle:checked ~ nav .nav-links {
+    transform: translateX(0);
+  }
+
+  /* Overlay oscuro al abrir menú */
+  .overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    z-index: 999;
+  }
+
+  #menu-toggle:checked ~ .overlay {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Hero ajustes móvil */
+  .hero-content { padding: 0 20px; }
+  .hero-buttons { flex-direction: column; align-items: flex-start; }
+  .scroll-indicator { display: none; }
+
+  footer { padding: 28px 20px; }
+}
