@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <title>Javier Carranza | Portafolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="particles.js" />
-  <link rel="stylesheet" href="main.js" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,23 +12,20 @@
 <header class="navbar">
   <div class="nav-container">
     <div class="logo">
-      <a href="#inicio">Javier Carranza | Dev</a>
+      <a href="#inicio">Javier Carranza</a>
     </div>
-    <!-- checkbox hack para menú móvil -->
     <input type="checkbox" id="menu-toggle" />
     <label for="menu-toggle" class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
+      <span></span><span></span><span></span>
     </label>
-    <!-- overlay that also acts as close trigger -->
     <label for="menu-toggle" class="overlay"></label>
     <nav>
       <ul class="nav-links">
         <li><a href="#inicio">Inicio</a></li>
         <li><a href="#sobre-mi">Sobre mí</a></li>
-        <li><a href="#habilidades">Servicios</a></li>
-        <li><a href="#proyectos">Portafolio</a></li>
+        <li><a href="#habilidades">Redes</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -38,320 +33,276 @@
 </header>
 
 <!-- HERO -->
-<header id="inicio" class="hero">
+<section id="inicio" class="hero">
+  <div id="particles-js"></div>
   <div class="hero-content">
-    <h1>Javier Antonio <span>Carranza Hernández</span></h1>
-    <p>Ingeniero en Sistemas Computacionales · Desarrollador Jr · Soporte TI</p>
-    <a href="#proyectos" class="btn">Ver proyectos</a>
-    <a href="CV_Javier_Carranza.pdf" class="btn btn-outline" download>Descargar CV</a>
+    <p class="hero-eyebrow">✦ Desarrollador · Tijuana, México</p>
+    <h1>Javier Antonio<br><em>Carranza Hernández</em></h1>
+    <p class="hero-sub">Ingeniero en Sistemas Computacionales. Construyo soluciones web funcionales, limpias y duraderas.</p>
+    <div class="hero-buttons">
+      <a href="#proyectos" class="btn">Ver proyectos</a>
+      <a href="CV_Javier_Carranza.pdf" class="btn btn-outline" download>Descargar CV</a>
+    </div>
   </div>
-</header>
+</section>
 
 <main>
 
-<section class="about">
-  <h1>Sobre mi</h1>
-  <p class="subtitle"><span>4+</span> Transformando código en soluciones reales</p>
-
-  <div class="about-grid">
-    <!-- Columna izquierda -->
-    <div class="about-left">
-      <h2>Conóceme mejor</h2>
-
-      <div class="card">
-        Soy Javier, desarrollador con experiencia en proyectos académicos,
-        freelance y soporte técnico. Me enfoco en crear soluciones claras,
-        funcionales y fáciles de mantener.
-      </div>
-
-      <div class="card">
-        He trabajado en desarrollo web, soporte IT y sistemas internos,
-        combinando programación con atención a usuarios y procesos.
-      </div>
-
-      <div class="card">
-        Me adapto fácil a equipos de trabajo, priorizo la comunicación clara
-        y la organización. Mi objetivo es crear software útil y duradero.
-      </div>
-
-      <button class="btn-primary">Ver Proyectos</button>
+  <!-- SOBRE MÍ -->
+  <section id="sobre-mi" class="about">
+    <div class="section-label">
+      <span class="tag">// Sobre mí</span>
     </div>
-
-    <!-- Columna derecha -->
-    <div class="about-right">
-      <h2>Mis habilidades y herramientas</h2>
-
-      <h3>FRONTEND</h3>
-      <div class="skills">
-        <div class="skill">HTML5</div>
-        <div class="skill">CSS3</div>
-        <div class="skill">React</div>
-        <div class="skill">Bootstrap</div>
+    <div class="about-grid">
+      <div class="about-left">
+        <h2>Conóceme<br><span>mejor</span></h2>
+        <div class="card">Soy Javier, desarrollador con experiencia en proyectos académicos, freelance y soporte técnico. Me enfoco en crear soluciones claras, funcionales y fáciles de mantener.</div>
+        <div class="card">He trabajado en desarrollo web, soporte IT y sistemas internos, combinando programación con atención a usuarios y procesos.</div>
+        <div class="card">Me adapto fácil a equipos de trabajo, priorizo la comunicación clara y la organización. Mi objetivo es crear software útil y duradero.</div>
+        <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
       </div>
-
-      <h3>BACKEND</h3>
-      <div class="skills">
-        <div class="skill">Node.js</div>
-        <div class="skill">MySQL</div>
-        <div class="skill">Java</div>
-        <div class="skill">C++</div>
-        <div class="skill">Python</div>
-        <div class="skill">JavaScript</div>
-      </div>
-
-      <h3>HERRAMIENTAS</h3>
-      <div class="skills">
-        <div class="skill">Git</div>
-        <div class="skill">GitHub</div>
-        <div class="skill">Visual Studio</div>
-        <div class="skill">Microsoft Office</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- HABILIDADES -->
-<section id="redes" class="social-section">
-  <div class="social-wrapper">
-
-    <!-- Texto izquierda -->
-    <div class="social-text">
-      <h2>Contenido & Redes</h2>
-      <p>
-        También comparto contenido sobre tecnología, proyectos y creatividad.
-      </p>
-    </div>
-
-    <!-- Cards derecha -->
-    <div class="social-grid">
-
-      <a href="https://www.youtube.com/@ElJaviDev" target="_blank" class="social-card">
-        <div class="icon">
-          <img src="Fotos/profile2.jpg" alt="YouTube">
+      <div class="about-right">
+        <h3>Habilidades y herramientas</h3>
+        <div class="skills-block">
+          <h4>Frontend</h4>
+          <div class="skills">
+            <span class="skill">HTML5</span><span class="skill">CSS3</span>
+            <span class="skill">React</span><span class="skill">Bootstrap</span>
+          </div>
         </div>
-        <div class="info">
-          <h3>YouTube</h3>
-          <p>@ElJaviDev</p>
+        <div class="skills-block">
+          <h4>Backend</h4>
+          <div class="skills">
+            <span class="skill">Node.js</span><span class="skill">MySQL</span>
+            <span class="skill">Java</span><span class="skill">C++</span>
+            <span class="skill">Python</span><span class="skill">JavaScript</span>
+          </div>
         </div>
-      </a>
-
-      <a href="https://www.instagram.com/javiee_antonio/" target="_blank" class="social-card">
-        <div class="icon">
-          <img src="Fotos/profile.jpg" alt="Instagram">
-        </div>
-        <div class="info">
-          <h3>Instagram</h3>
-          <p>@javiee_antonio</p>
-        </div>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- PROYECTOS -->
-  <section id="proyectos" class="projects-section">
-  <h2 class="section-title">Proyectos</h2>
-  <p class="section-subtitle">
-    Algunos desarrollos reales en software y web.
-  </p>
-
-  <div class="projects-grid">
-
-    <!-- Proyecto 1 -->
-<div class="project-card">
-  <img src="Fotos/MariHev2.jpg" alt="Sistema Inventario" />
-
-  <div class="project-content">
-    <h3>Sistema de Conteo e Inventario</h3>
-    <p>
-      Aplicación para control de productos y conteo por lotes
-      desarrollada para negocio real.
-    </p>
-
-    <div class="project-tags">
-      <span>Java</span>
-      <span>SQLite</span>
-      <span>CRUD</span>
-      <span>GUI</span>
-    </div>
-
-    <div class="project-links">
-      <a class="btn-sm" href="https://github.com/ElIngJavi/ElIngJavi.githbu.io" target="_blank">Código</a>
-      <a class="btn-sm outline" href="https://marihe-app.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>
-    </div>
-  </div>
-</div>
-
-    <!-- Proyecto 2 -->
-    <div class="project-card">
-      <img src="Fotos/pagina.PNG" alt="Sitio Cervan Acces" />
-
-      <div class="project-content">
-        <h3>Sitio Empresarial – Cervan Acces</h3>
-        <p>
-          Página web corporativa con galería de proyectos y formulario
-          de contacto.
-        </p>
-
-        <div class="project-tags">
-          <span>HTML</span>
-          <span>CSS</span>
-          <span>Responsive</span>
-          <span>Form</span>
-        </div>
-
-        <div class="project-links">
-          <a class="btn-sm" href="#">Código</a>
-          <a class="btn-sm outline" href="#">Ver Sitio</a>
+        <div class="skills-block">
+          <h4>Herramientas</h4>
+          <div class="skills">
+            <span class="skill">Git</span><span class="skill">GitHub</span>
+            <span class="skill">Visual Studio</span><span class="skill">Microsoft Office</span>
+          </div>
         </div>
       </div>
     </div>
-
-  </div>
-</section>
-
-<!-- EXPERIENCIA -->
- <section class="experience">
-
-    <!-- Columna izquierda -->
-    <div class="timeline">
-      <div class="job active">
-        <span class="year">2024 – 2025</span>
-        <h4>Inspector de Seguridad</h4>
-        <p>Trablisa · Tijuana</p>
-      </div>
-
-      <div class="job">
-        <span class="year">2023</span>
-        <h4>Desarrollador / Diseñador Web</h4>
-        <p>Cervan Acces · Tijuana</p>
-      </div>
-
-      <div class="job">
-        <span class="year">2022</span>
-        <h4>Desarrollador de Software</h4>
-        <p>MariHe · Tijuana</p>
-      </div>
-    </div>
-
-    <!-- Columna derecha -->
-    <div class="detail">
-      <h2>Inspector de Seguridad Aeroportuaria</h2>
-      <h3>Trablisa — Tijuana, México | Dic 2024 – Dic 2025</h3>
-
-      <p class="description">
-        Trabajo enfocado en la seguridad aeroportuaria, garantizando el cumplimiento
-        de protocolos operativos mediante el uso de sistemas tecnológicos, control
-        de accesos y atención directa a usuarios y autoridades.
-      </p>
-
-      <h4>RESPONSABILIDADES</h4>
-      <ul class="checks">
-        <li>Seguimiento de procedimientos operativos y protocolos.</li>
-        <li>Uso de sistemas tecnológicos para control de accesos.</li>
-        <li>Atención a usuarios, personal interno y autoridades.</li>
-        <li>Reporte de incidencias y manejo de bitácoras.</li>
-        <li>Trabajo bajo presión y resolución de situaciones.</li>
-      </ul>
-
-      <h4>TECNOLOGÍAS</h4>
-      <div class="tags">
-        <span>Sistemas de control</span>
-        <span>Bitácoras digitales</span>
-        <span>Equipos de verificación</span>
-        <span>Protocolos</span>
-      </div>
-    </div>
-
   </section>
 
-<!-- CONTACTO -->
-<section id="contacto" class="contact-section">
-
-  <div class="contact-title">
-    <p class="mini-title">// CONTACTO</p>
-    <h2>Construyamos <span>Juntos</span></h2>
-    <p class="subtitle">
-      Conecta conmigo para tu próximo proyecto o colaboración.
-    </p>
-  </div>
-
-  <div class="contact-grid">
-
-    <!-- IZQUIERDA: INFO -->
-    <div class="contact-info">
-
-      <h3>Información de Contacto</h3>
-      <p>
-        Estoy disponible para proyectos freelance, oportunidades laborales o
-        simplemente para conectar.
-      </p>
-
-      <div class="info-card">
-        <img src="Fotos/email.png" alt="Email">
-        <div>
-          <h4>Email</h4>
-          <a href="mailto:javierchernandez201@gmail.com">
-            javierchernandez201@gmail.com
-          </a>
-        </div>
-      </div>
-
-      <div class="info-card">
-        <img src="Fotos/lk.png" alt="LinkedIn">
-        <div>
-          <h4>LinkedIn</h4>
-          <a href="https://linkedin.com/in/javierhrz" target="_blank">
-            Javier Carranza
-          </a>
-        </div>
-      </div>
-
-      <div class="info-card">
-        <img src="Fotos/gt.png" alt="GitHub">
-        <div>
-          <h4>GitHub</h4>
-          <a href="https://github.com/ElIngJavi" target="_blank">
-            @ElIngJavi
-          </a>
-        </div>
-      </div>
-
-      <div class="info-card">
-        <img src="Fotos/ubi.png" alt="Ubicación">
-        <div>
-          <h4>Ubicación</h4>
-          <a>Tijuana, México</a>
-        </div>
-      </div>
-      
+  <!-- REDES -->
+  <section id="habilidades" class="social-section">
+    <div class="section-label">
+      <span class="tag">// Redes</span>
     </div>
+    <div class="social-wrapper">
+      <div class="social-text">
+        <h2>Contenido<br>& Redes</h2>
+        <p>También comparto contenido sobre tecnología, proyectos y creatividad.</p>
+      </div>
+      <div class="social-grid">
+        <a href="https://www.youtube.com/@ElJaviDev" target="_blank" class="social-card">
+          <div class="icon"><img src="Fotos/profile2.jpg" alt="YouTube" /></div>
+          <div class="info"><h3>YouTube</h3><p>@ElJaviDev</p></div>
+        </a>
+        <a href="https://www.instagram.com/javiee_antonio/" target="_blank" class="social-card">
+          <div class="icon"><img src="Fotos/profile.jpg" alt="Instagram" /></div>
+          <div class="info"><h3>Instagram</h3><p>@javiee_antonio</p></div>
+        </a>
+      </div>
+    </div>
+  </section>
 
-    <!-- DERECHA: FORMULARIO -->
-    <form class="contact-form" action="mailto:javierchernandez201@gmail.com" method="POST">
-  <label for="nombre">Nombre Completo</label>
-  <input id="nombre" type="text" placeholder="Tu nombre completo" required>
+  <!-- PROYECTOS -->
+  <section id="proyectos" class="projects-section">
+    <div class="section-label">
+      <span class="tag">// Proyectos</span>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="Fotos/MariHev2.jpg" alt="Sistema Inventario" />
+        <div class="project-content">
+          <h3>Sistema de Conteo e Inventario</h3>
+          <p>Aplicación para control de productos y conteo por lotes desarrollada para negocio real.</p>
+          <div class="project-tags"><span>Java</span><span>SQLite</span><span>CRUD</span><span>GUI</span></div>
+          <div class="project-links">
+            <a class="btn-sm" href="https://github.com/ElIngJavi" target="_blank">Código</a>
+            <a class="btn-sm outline" href="https://marihe-app.vercel.app/" target="_blank">Demo</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="Fotos/pagina.PNG" alt="Sitio Cervan Acces" />
+        <div class="project-content">
+          <h3>Sitio Empresarial – Cervan Acces</h3>
+          <p>Página web corporativa con galería de proyectos y formulario de contacto.</p>
+          <div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsive</span><span>Form</span></div>
+          <div class="project-links">
+            <a class="btn-sm" href="#">Código</a>
+            <a class="btn-sm outline" href="#">Ver Sitio</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <label for="correo">Email</label>
-  <input id="correo" type="email" placeholder="Tu correo" required>
+  <!-- EXPERIENCIA -->
+  <section id="experiencia" class="experience">
+    <div class="section-label">
+      <span class="tag">// Experiencia</span>
+    </div>
+    <div class="experience-grid">
+      <div class="timeline">
+        <div class="job active">
+          <span class="year">2024 – 2025</span>
+          <h4>Inspector de Seguridad</h4>
+          <p>Trablisa · Tijuana</p>
+        </div>
+        <div class="job">
+          <span class="year">2023</span>
+          <h4>Desarrollador / Diseñador Web</h4>
+          <p>Cervan Acces · Tijuana</p>
+        </div>
+        <div class="job">
+          <span class="year">2022</span>
+          <h4>Desarrollador de Software</h4>
+          <p>MariHe · Tijuana</p>
+        </div>
+      </div>
+      <div class="detail">
+        <h2>Inspector de Seguridad Aeroportuaria</h2>
+        <h3>Trablisa — Tijuana, México &nbsp;·&nbsp; Dic 2024 – Dic 2025</h3>
+        <p class="description">Trabajo enfocado en la seguridad aeroportuaria, garantizando el cumplimiento de protocolos operativos mediante el uso de sistemas tecnológicos, control de accesos y atención directa a usuarios y autoridades.</p>
+        <h4>Responsabilidades</h4>
+        <ul class="checks">
+          <li>Seguimiento de procedimientos operativos y protocolos.</li>
+          <li>Uso de sistemas tecnológicos para control de accesos.</li>
+          <li>Atención a usuarios, personal interno y autoridades.</li>
+          <li>Reporte de incidencias y manejo de bitácoras.</li>
+          <li>Trabajo bajo presión y resolución de situaciones.</li>
+        </ul>
+        <h4>Tecnologías</h4>
+        <div class="tags">
+          <span>Sistemas de control</span><span>Bitácoras digitales</span>
+          <span>Equipos de verificación</span><span>Protocolos</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <label for="mensaje">Mensaje</label>
-  <textarea id="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+  <!-- CONTACTO -->
+  <section id="contacto" class="contact-section">
+    <div class="section-label">
+      <span class="tag">// Contacto</span>
+    </div>
+    <div class="contact-title">
+      <h2>Construyamos<br><span>juntos</span></h2>
+      <p class="subtitle">Conecta conmigo para tu próximo proyecto o colaboración.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <h3>Información de contacto</h3>
+        <p>Disponible para proyectos freelance, oportunidades laborales o simplemente conectar.</p>
+        <div class="info-card">
+          <img src="Fotos/email.png" alt="Email" />
+          <div><h4>Email</h4><a href="mailto:javierchernandez201@gmail.com">javierchernandez201@gmail.com</a></div>
+        </div>
+        <div class="info-card">
+          <img src="Fotos/lk.png" alt="LinkedIn" />
+          <div><h4>LinkedIn</h4><a href="https://linkedin.com/in/javierhrz" target="_blank">Javier Carranza</a></div>
+        </div>
+        <div class="info-card">
+          <img src="Fotos/gt.png" alt="GitHub" />
+          <div><h4>GitHub</h4><a href="https://github.com/ElIngJavi" target="_blank">@ElIngJavi</a></div>
+        </div>
+        <div class="info-card">
+          <img src="Fotos/ubi.png" alt="Ubicación" />
+          <div><h4>Ubicación</h4><span>Tijuana, México</span></div>
+        </div>
+      </div>
+      <form class="contact-form" action="mailto:javierchernandez201@gmail.com" method="POST" enctype="text/plain">
+        <label for="nombre">Nombre completo</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre completo" required />
+        <label for="correo">Email</label>
+        <input id="correo" name="correo" type="email" placeholder="Tu correo" required />
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
+        <button type="submit">✈ Enviar mensaje</button>
+        <p class="safe-text">&lt;/&gt; Tus datos están seguros y no serán compartidos</p>
+      </form>
+    </div>
+  </section>
 
-  <button type="submit">
-    ✈ Enviar Mensaje
-  </button>
-  <p class="safe-text">
-    </> Tus datos están seguros y no serán compartidos
-  </p>
-</form>
-  </div>
-</section>
 </main>
+
 <footer>
-  <p>© 2026 Javier Carranza</p>
+  <p>© 2026 Javier Carranza &nbsp;·&nbsp; Hecho en Tijuana</p>
 </footer>
+
+<!-- ═══════════════════════════════
+     SCRIPTS — particles.js PRIMERO,
+     luego la configuración
+════════════════════════════════ -->
+<script src="particles.js"></script>
+<script>
+  /* Se ejecuta al cargar la página, DESPUÉS de que particles.js ya está disponible */
+  window.addEventListener('load', function () {
+    if (typeof particlesJS === 'undefined') {
+      console.warn('particles.js no encontrado. Verifica que el archivo exista en la carpeta.');
+      return;
+    }
+
+    particlesJS('particles-js', {
+      particles: {
+        number: {
+          value: 70,
+          density: { enable: true, value_area: 900 }
+        },
+        color: { value: '#38bdf8' },
+        shape: { type: 'circle' },
+        opacity: {
+          value: 0.22,
+          random: true,
+          anim: { enable: true, speed: 0.6, opacity_min: 0.05, sync: false }
+        },
+        size: {
+          value: 2.5,
+          random: true,
+          anim: { enable: false }
+        },
+        line_linked: {
+          enable: true,
+          distance: 150,
+          color: '#38bdf8',
+          opacity: 0.10,
+          width: 1
+        },
+        move: {
+          enable: true,
+          speed: 0.9,
+          direction: 'none',
+          random: true,
+          straight: false,
+          out_mode: 'out',
+          bounce: false
+        }
+      },
+      interactivity: {
+        detect_on: 'canvas',
+        events: {
+          onhover: { enable: true, mode: 'grab' },
+          onclick:  { enable: true, mode: 'push' },
+          resize: true
+        },
+        modes: {
+          grab:  { distance: 180, line_linked: { opacity: 0.3 } },
+          push:  { particles_nb: 3 }
+        }
+      },
+      retina_detect: true
+    });
+  });
+</script>
+<script src="main.js"></script>
+
 </body>
 </html>
