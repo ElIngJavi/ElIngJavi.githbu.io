@@ -193,7 +193,9 @@
 
     <!-- Spotify -->
     <div class="spotify-embed" style="padding:0">
+  <!-- Se muestra en desktop -->
   <iframe 
+    class="spotify-iframe"
     style="border-radius:12px" 
     src="https://open.spotify.com/embed/playlist/4KQLYnzXHcEoRzngBelICy?utm_source=generator" 
     width="100%" 
@@ -201,9 +203,14 @@
     frameBorder="0" 
     allowfullscreen="" 
     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    loading="lazy"
-    sandbox="allow-same-origin allow-scripts allow-presentation allow-popups">
+    loading="lazy">
   </iframe>
+  <!-- Se muestra en móvil -->
+  <a href="https://open.spotify.com/playlist/4KQLYnzXHcEoRzngBelICy" 
+     target="_blank" 
+     class="spotify-mobile-btn">
+    Abrir playlist en Spotify ↗
+  </a>
 </div>
 
     <!-- Videojuegos -->
