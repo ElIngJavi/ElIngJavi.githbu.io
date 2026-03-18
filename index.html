@@ -192,25 +192,37 @@
   <div class="bottom-grid">
 
     <!-- Spotify -->
-    <div class="spotify-embed" style="padding:0">
-  <!-- Se muestra en desktop -->
-  <iframe 
-    class="spotify-iframe"
-    style="border-radius:12px" 
-    src="https://open.spotify.com/embed/playlist/4KQLYnzXHcEoRzngBelICy?utm_source=generator" 
-    width="100%" 
-    height="352" 
-    frameBorder="0" 
-    allowfullscreen="" 
-    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-    loading="lazy">
-  </iframe>
-  <!-- Se muestra en móvil -->
-  <a href="https://open.spotify.com/playlist/4KQLYnzXHcEoRzngBelICy" 
-     target="_blank" 
-     class="spotify-mobile-btn">
-    Abrir playlist en Spotify ↗
-  </a>
+<div class="spotify-card">
+  <div class="spotify-header">
+    <div class="spotify-dot"></div>
+    <div>
+      <div class="spotify-title">Beats para debuggear</div>
+      <div class="spotify-sub">Lo que escucho mientras codifico</div>
+    </div>
+  </div>
+  <!-- Desktop y Android -->
+  <div class="spotify-embed spotify-desktop" style="padding:0">
+    <iframe 
+      style="border-radius:0 0 12px 12px" 
+      src="https://open.spotify.com/embed/playlist/4KQLYnzXHcEoRzngBelICy?utm_source=generator" 
+      width="100%" 
+      height="352" 
+      frameBorder="0" 
+      allowfullscreen="" 
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+      loading="lazy">
+    </iframe>
+  </div>
+  <!-- Solo iPhone/Safari -->
+  <div class="spotify-mobile-fallback">
+    <div class="spotify-mobile-art">♪</div>
+    <p class="spotify-mobile-desc">La música que suena mientras el código corre y las luces están apagadas.</p>
+    <a href="https://open.spotify.com/playlist/4KQLYnzXHcEoRzngBelICy" 
+       target="_blank" 
+       class="spotify-open-btn">
+      Abrir en Spotify ↗
+    </a>
+  </div>
 </div>
 
     <!-- Videojuegos -->

@@ -815,19 +815,55 @@
   margin-top: 12px;
 }
 
-.spotify-mobile-btn {
+/* Spotify móvil fallback (solo iOS Safari) */
+.spotify-mobile-fallback {
   display: none;
-  width: 100%;
-  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 20px;
+  text-align: center;
+}
+
+.spotify-mobile-art {
+  font-size: 3rem;
+  background: rgba(29, 185, 84, 0.1);
+  border: 1px solid rgba(29, 185, 84, 0.25);
+  border-radius: 16px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spotify-mobile-desc {
+  font-size: 0.82rem;
+  color: var(--muted2);
+  line-height: 1.6;
+  max-width: 260px;
+}
+
+.spotify-open-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
   background: #1DB954;
   color: #000;
   font-weight: 700;
-  font-size: 0.9rem;
-  text-align: center;
-  border-radius: 12px;
+  font-size: 0.88rem;
+  border-radius: 999px;
+  transition: opacity 0.2s, transform 0.2s;
 }
 
-@media (max-width: 600px) {
-  .spotify-iframe { display: none; }
-  .spotify-mobile-btn { display: block; }
+.spotify-open-btn:hover {
+  opacity: 0.87;
+  transform: translateY(-1px);
+}
+
+/* En iOS Safari ocultar iframe y mostrar fallback */
+@supports (-webkit-touch-callout: none) {
+  .spotify-desktop { display: none !important; }
+  .spotify-mobile-fallback { display: flex !important; }
 }
