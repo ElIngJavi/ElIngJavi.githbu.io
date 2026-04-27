@@ -5,12 +5,12 @@
   <title>Javier Carranza | Portafolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO básico -->
+  <!-- SEO -->
   <meta name="description" content="Portafolio de Javier Carranza — Ingeniero en Sistemas Computacionales, Desarrollador Web Fullstack. Tijuana, México." />
   <meta name="keywords" content="Javier Carranza, desarrollador web, fullstack, React, Python, Tijuana, portafolio" />
   <meta name="author" content="Javier Carranza" />
 
-  <!-- Open Graph (WhatsApp, LinkedIn, Facebook) -->
+  <!-- Open Graph -->
   <meta property="og:title" content="Javier Carranza | Desarrollador Web" />
   <meta property="og:description" content="Ingeniero en Sistemas Computacionales. Desarrollo web fullstack, proyectos freelance y más. Tijuana, México." />
   <meta property="og:image" content="https://el-javi.vercel.app/assets/img/og-image.PNG" />
@@ -28,11 +28,11 @@
   <meta name="twitter:image" content="https://el-javi.vercel.app/assets/img/og-image.PNG" />
 
   <!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon.png">
-<link rel="apple-touch-icon" href="/assets/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="/assets/img/favicon.png">
 
-  <!-- CSS modular -->
+  <!-- CSS -->
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/navbar.css" />
   <link rel="stylesheet" href="css/hero.css" />
@@ -42,434 +42,39 @@
 </head>
 <body>
 
-  <!-- BARRA DE PROGRESO DE SCROLL -->
   <div id="scroll-progress"></div>
-
-  <!-- CURSOR PERSONALIZADO -->
   <div id="cursor"></div>
   <div id="cursor-trail"></div>
 
-  <!-- NAVBAR -->
-  <header class="navbar">
-    <div class="nav-container">
-      <div class="logo">
-        <a href="#inicio">Javier Carranza</a>
-      </div>
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">
-        <span></span><span></span><span></span>
-      </label>
-      <label for="menu-toggle" class="overlay"></label>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#sobre-mi">Sobre mí</a></li>
-          <li><a href="#habilidades">Redes</a></li>
-          <li><a href="#proyectos">Proyectos</a></li>
-          <li><a href="#experiencia">Experiencia</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-        </ul>
-      </nav>
-  </div>
-</header>
-
-  <!-- HERO -->
-  <section id="inicio" class="hero">
-    <div id="particles-js"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">✦ Desarrollador · Tijuana, México</p>
-      <h1>Javier Antonio<br><em>Carranza Hernández</em></h1>
-      <p class="hero-sub">Ingeniero en Sistemas Computacionales. <span id="typewriter"></span></p>
-      <div class="hero-buttons">
-        <a href="#proyectos" class="btn">Ver proyectos</a>
-        <a href="CV_Javier_Carranza.pdf.pdf" class="btn btn-outline" download>Descargar CV</a>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      <span>Scroll</span>
-      <div class="scroll-line"><div class="scroll-dot"></div></div>
-    </div>
-  </section>
+  <div id="navbar-placeholder"></div>
+  <div id="hero-placeholder"></div>
 
   <main>
-
-    <!-- STATS -->
-    <section class="stats-section fade-in">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <span class="stat-number" data-target="4">0</span><span class="stat-plus">+</span>
-          <p>Años de experiencia</p>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
-          <p>Proyectos completados</p>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="2">0</span><span class="stat-plus">+</span>
-          <p>Clientes reales</p>
-        </div>
-        <div class="stat-item">
-          <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
-          <p>Compromiso en cada proyecto</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE MÍ -->
-    <section id="sobre-mi" class="about fade-in">
-      <div class="section-label">
-        <span class="section-num">01</span>
-        <span class="tag">// Sobre mí</span>
-      </div>
-      <div class="about-grid">
-        <div class="about-left">
-          <h2>Conóceme<br><span>mejor</span></h2>
-          <div class="card">Soy Javier, desarrollador con experiencia en proyectos académicos, freelance y soporte técnico. Me enfoco en crear soluciones claras, funcionales y fáciles de mantener.</div>
-          <div class="card">He trabajado en desarrollo web, soporte IT y sistemas internos, combinando programación con atención a usuarios y procesos.</div>
-          <div class="card">Me adapto fácil a equipos de trabajo, priorizo la comunicación clara y la organización. Mi objetivo es crear software útil y duradero.</div>
-          <a href="#proyectos" class="btn-primary">Ver proyectos →</a>
-        </div>
-        <div class="about-right">
-          <div class="profile-wrapper">
-            <div class="profile-photo">
-              <img src="assets/img/profile.jpg" alt="Javier Carranza" />
-            </div>
-            <div class="profile-badge"><span>✦</span> Disponible para proyectos</div>
-          </div>
-          <div class="skills-section">
-            <h3>Habilidades y herramientas</h3>
-            <div class="skills-block">
-              <h4>Frontend</h4>
-              <div class="skills">
-                <span class="skill">HTML5</span><span class="skill">CSS3</span>
-                <span class="skill">React</span><span class="skill">Bootstrap</span>
-              </div>
-            </div>
-            <div class="skills-block">
-              <h4>Backend</h4>
-              <div class="skills">
-                <span class="skill">Node.js</span><span class="skill">MySQL</span>
-                <span class="skill">Java</span><span class="skill">C++</span>
-                <span class="skill">Python</span><span class="skill">JavaScript</span>
-              </div>
-            </div>
-            <div class="skills-block">
-              <h4>Herramientas</h4>
-              <div class="skills">
-                <span class="skill">Git</span><span class="skill">GitHub</span>
-                <span class="skill">Visual Studio</span><span class="skill">Microsoft Office</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SOBRE MÍ & REDES -->
-<section id="habilidades" class="social-section fade-in">
-  <div class="section-label">
-    <span class="section-num">02</span>
-    <span class="tag">// Sobre mí & Redes</span>
-  </div>
-
-  <!-- LoL Banner -->
-  <div class="lol-banner">
-    <div class="lol-left">
-      <div class="lol-badge">En vivo · Riot API</div>
-      <h2 id="lol-rank-title">Esmeralda IV<br><span id="lol-summoner">ElJavi · LAN</span></h2>
-      <p>Main Jungla · Season 2026</p>
-      <div class="lol-stats-row">
-        <div class="lol-stat">
-          <span class="lol-stat-num" id="lol-played">90</span>
-          <span class="lol-stat-label">Partidas</span>
-        </div>
-        <div class="lol-stat">
-          <span class="lol-stat-num wr" id="lol-winrate">55.6%</span>
-          <span class="lol-stat-label">Winrate</span>
-        </div>
-        <div class="lol-stat">
-          <span class="lol-stat-num" id="lol-wins">50</span>
-          <span class="lol-stat-label">Victorias</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="mains-col" id="lol-mains-col">
-    <div class="main-pill">
-        <span class="main-pill-dot" style="background:#c084fc"></span>
-        <span>Kayn</span>
-        <span class="main-pill-role">JG</span>
-      </div>
-      <div class="main-pill">
-        <span class="main-pill-dot" style="background:#818cf8"></span>
-        <span>Viego</span>
-        <span class="main-pill-role">JG</span>
-      </div>
-      <div class="main-pill">
-        <span class="main-pill-dot" style="background:#fb923c"></span>
-        <span>Lee Sin</span>
-        <span class="main-pill-role">JG</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Bottom grid -->
-  <div class="bottom-grid">
-
-    <!-- Spotify -->
-<div class="spotify-card">
-  <div class="spotify-header">
-    <div class="spotify-dot"></div>
-    <div>
-      <div class="spotify-title">Beats para debuggear</div>
-      <div class="spotify-sub">Lo que escucho mientras codifico</div>
-    </div>
-  </div>
-  <!-- Desktop y Android -->
-  <div class="spotify-embed spotify-desktop" style="padding:0">
-    <iframe 
-      style="border-radius:0 0 12px 12px" 
-      src="https://open.spotify.com/embed/playlist/4KQLYnzXHcEoRzngBelICy?utm_source=generator" 
-      width="100%" 
-      height="352" 
-      frameBorder="0" 
-      allowfullscreen="" 
-      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
-      loading="lazy">
-    </iframe>
-  </div>
-  <!-- Solo iPhone/Safari -->
-<div class="spotify-mobile-fallback">
-  <div class="spotify-mobile-cover">
-    <img src="assets/img/spotify-cover.jpg" alt="Beats para debuggear" class="spotify-mobile-img" />
-    <div class="spotify-mobile-overlay">
-      <div class="spotify-mobile-info">
-        <div class="spotify-mobile-playlist">Beats para debuggear</div>
-        <div class="spotify-mobile-by">por Javi</div>
-      </div>
-    </div>
-  </div>
-  <p class="spotify-mobile-desc">La música que suena mientras el código corre y las luces están apagadas.</p>
-  <a href="https://open.spotify.com/playlist/4KQLYnzXHcEoRzngBelICy" target="_blank" class="spotify-open-btn">
-    Abrir en Spotify ↗
-  </a>
-</div>
-</div>
-
-    <!-- Videojuegos -->
-    <div class="games-card">
-      <div class="card-label">Videojuegos</div>
-      <div class="game-item">
-        <span class="game-dot" style="background:#c084fc"></span>
-        <div>
-          <div class="game-name">Super Smash Bros Ultimate</div>
-          <div class="game-sub">Joker y Ness · Mains</div>
-        </div>
-      </div>
-      <div class="game-item">
-        <span class="game-dot" style="background:#4ade80"></span>
-        <div>
-          <div class="game-name">Minecraft</div>
-          <div class="game-sub">Técnico · Granjas automáticas</div>
-        </div>
-      </div>
-      <div class="game-item">
-        <span class="game-dot" style="background:#f87171"></span>
-        <div>
-          <div class="game-name">Valorant</div>
-          <div class="game-sub">Main Iso · Competitivo</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Películas + Redes -->
-    <div class="misc-card">
-      <div>
-        <div class="card-label">Películas favoritas</div>
-        <div class="movie-list">
-          <div class="movie-item"><span class="movie-bar"></span>Halloween</div>
-          <div class="movie-item"><span class="movie-bar"></span>Hereditary</div>
-          <div class="movie-item"><span class="movie-bar"></span>The Hills Have Eyes</div>
-        </div>
-      </div>
-      <div>
-        <div class="card-label">Redes</div>
-        <div class="social-row">
-          <a href="https://www.youtube.com/@ElJaviDev" target="_blank" class="social-pill">
-            <span class="social-pill-dot" style="background:#ff0000"></span>YT
-          </a>
-          <a href="https://www.instagram.com/javiee_antonio/" target="_blank" class="social-pill">
-            <span class="social-pill-dot" style="background:#e1306c"></span>IG
-          </a>
-          <a href="https://www.tiktok.com/@eling.javier" target="_blank" class="social-pill">
-            <span class="social-pill-dot" style="background:#69C9D0"></span>TikTok
-          </a>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-    <!-- PROYECTOS -->
-<section id="proyectos" class="projects-section fade-in">
-  <div class="section-label">
-    <span class="section-num">03</span>
-    <span class="tag">// Proyectos</span>
-  </div>
-  <div class="projects-grid">
-    <div class="project-card featured">
-      <div class="project-badge">⭐ Destacado</div>
-      <img src="assets/img/MariHev2.jpg" alt="MariHe App" />
-      <div class="project-content">
-        <h3>MariHe App — Sistema de Conteo de Productos</h3>
-        <p>Aplicación web fullstack para el conteo y registro de productos en tiempo real. Incluye autenticación JWT, roles de usuario, exportación a Excel y panel de administrador.</p>
-        <div class="project-tags">
-          <span>React 18</span><span>FastAPI</span><span>MongoDB</span>
-          <span>Python</span><span>Vercel</span><span>JWT</span>
-        </div>
-        <div class="project-links">
-          <a class="btn-sm outline" href="https://marihe-app.vercel.app/" target="_blank">Demo en vivo →</a>
-          <a class="btn-sm outline" href="projects/marihe.html">Ver detalle →</a>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="assets/img/pagina2.PNG" alt="Sitio Cervan Acces" />
-      <div class="project-content">
-        <h3>Sitio Empresarial – Cervan Acces</h3>
-        <p>Sitio web corporativo para empresa de puertas automáticas y control de acceso. Incluye galería de proyectos instalados, información de servicios y formulario de contacto para cotizaciones.</p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span><span>Formulario</span>
-        </div>
-        <div class="project-links">
-          <a class="btn-sm outline" href="https://scintillating-monstera-9ed95a.netlify.app/" target="_blank">Ver Sitio →</a>
-          <a class="btn-sm outline" href="projects/cervan.html">Ver detalle →</a>
-        </div>
-      </div>
-    </div>
-    <div class="project-card">
-      <img src="assets/img/sombras.PNG" alt="Sombras Literarias" />
-      <div class="project-content">
-        <h3>Sombras Literarias — Biblioteca de lo Oscuro</h3>
-        <p>Biblioteca digital de género oscuro con catálogo por categorías, sistema de favoritos, búsqueda y ordenamiento. Más de 36 libros de terror, manga, cómic y misterio.</p>
-        <div class="project-tags">
-          <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Responsive</span>
-        </div>
-        <div class="project-links">
-          <a class="btn-sm outline" href="https://zesty-cuchufli-079120.netlify.app/" target="_blank">Ver Sitio →</a>
-          <a class="btn-sm outline" href="projects/sombras.html">Ver detalle →</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-    <!-- EXPERIENCIA -->
-    <section id="experiencia" class="experience fade-in">
-      <div class="section-label">
-        <span class="section-num">04</span>
-        <span class="tag">// Experiencia</span>
-      </div>
-      <div class="experience-grid">
-        <div class="timeline">
-          <div class="job active">
-            <span class="year">2024 – 2025</span>
-            <h4>Inspector de Seguridad</h4>
-            <p>Trablisa · Tijuana</p>
-          </div>
-          <div class="job">
-            <span class="year">2023</span>
-            <h4>Desarrollador / Diseñador Web</h4>
-            <p>Cervan Acces · Tijuana</p>
-          </div>
-          <div class="job">
-            <span class="year">2022</span>
-            <h4>Desarrollador de Software</h4>
-            <p>MariHe · Tijuana</p>
-          </div>
-        </div>
-        <div class="detail">
-          <h2>Inspector de Seguridad Aeroportuaria</h2>
-          <h3>Trablisa — Tijuana, México &nbsp;·&nbsp; Dic 2024 – Dic 2025</h3>
-          <p class="description">Trabajo enfocado en la seguridad aeroportuaria, garantizando el cumplimiento de protocolos operativos mediante el uso de sistemas tecnológicos, control de accesos y atención directa a usuarios y autoridades.</p>
-          <h4>Responsabilidades</h4>
-          <ul class="checks">
-            <li>Seguimiento de procedimientos operativos y protocolos.</li>
-            <li>Uso de sistemas tecnológicos para control de accesos.</li>
-            <li>Atención a usuarios, personal interno y autoridades.</li>
-            <li>Reporte de incidencias y manejo de bitácoras.</li>
-            <li>Trabajo bajo presión y resolución de situaciones.</li>
-          </ul>
-          <h4>Tecnologías</h4>
-          <div class="tags">
-            <span>Sistemas de control</span><span>Bitácoras digitales</span>
-            <span>Equipos de verificación</span><span>Protocolos</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="contact-section fade-in">
-      <div class="section-label">
-        <span class="section-num">05</span>
-        <span class="tag">// Contacto</span>
-      </div>
-      <div class="contact-title">
-        <h2>Construyamos<br><span>juntos</span></h2>
-        <p class="subtitle">Conecta conmigo para tu próximo proyecto o colaboración.</p>
-      </div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3>Información de contacto</h3>
-          <p>Disponible para proyectos freelance, oportunidades laborales o simplemente conectar.</p>
-          <div class="info-card">
-            <img src="assets/img/email.png" alt="Email" />
-            <div><h4>Email</h4><a href="mailto:javierchernandez201@gmail.com">javierchernandez201@gmail.com</a></div>
-          </div>
-          <div class="info-card">
-            <img src="assets/img/lk.png" alt="LinkedIn" />
-            <div><h4>LinkedIn</h4><a href="https://linkedin.com/in/javierhrz" target="_blank">Javier Carranza</a></div>
-          </div>
-          <div class="info-card">
-            <img src="assets/img/gt.png" alt="GitHub" />
-            <div><h4>GitHub</h4><a href="https://github.com/ElIngJavi" target="_blank">@ElIngJavi</a></div>
-          </div>
-          <div class="info-card">
-            <img src="assets/img/ubi.png" alt="Ubicación" />
-            <div><h4>Ubicación</h4><span>Tijuana, México</span></div>
-          </div>
-        </div>
-        <form class="contact-form" action="https://formspree.io/f/xaqplbdp" method="POST">
-          <label for="nombre">Nombre completo</label>
-          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre completo" required />
-          <label for="correo">Email</label>
-          <input id="correo" name="email" type="email" placeholder="Tu correo" required />
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" placeholder="Cuéntame sobre tu proyecto..." required></textarea>
-          <button type="submit">✈ Enviar mensaje</button>
-          <p class="safe-text">&lt;/&gt; Tus datos están seguros y no serán compartidos</p>
-        </form>
-      </div>
-    </section>
-
+    <div id="stats-placeholder"></div>
+    <div id="sobre-mi-placeholder"></div>
+    <div id="cotizar-placeholder"></div>
+    <div id="proyectos-placeholder"></div>
+    <div id="experiencia-placeholder"></div>
+    <div id="contacto-placeholder"></div>
   </main>
 
-  <footer>
-    <p>© <span id="footer-year"></span> Javier Carranza &nbsp;·&nbsp; Hecho en Tijuana</p>
-  </footer>
+  <div id="footer-placeholder"></div>
 
-  <!-- Scripts modulares (orden importa) -->
-  <script src="js/particles.js"></script>
-  <script src="js/particles-config.js"></script>
-  <script src="js/cursor.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/typewriter.js"></script>
-  <script src="js/stats.js"></script>
-  <script src="js/main.js"></script>
-  <script src="js/experience.js"></script>
-  <script src="js/lol-widget.js"></script>
+  <!-- Botón flotante de WhatsApp -->
+  <a
+    class="whatsapp-float"
+    href="https://wa.me/526645041509?text=Hola%20Javier%2C%20me%20gustar%C3%ADa%20cotizar%20un%20proyecto%20contigo%20%F0%9F%91%A8%E2%80%8D%F0%9F%92%BB"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chatear por WhatsApp"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="white" width="28" height="28">
+      <path d="M16 0C7.163 0 0 7.163 0 16c0 2.833.738 5.49 2.027 7.8L0 32l8.417-2.004A15.94 15.94 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.77-1.853l-.486-.29-5 1.19 1.22-4.854-.317-.5A13.267 13.267 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.29-9.9c-.4-.2-2.364-1.167-2.73-1.3-.367-.133-.634-.2-.9.2s-1.034 1.3-1.267 1.567c-.233.267-.467.3-.867.1-.4-.2-1.69-.623-3.22-1.987-1.19-1.063-1.993-2.374-2.227-2.774-.233-.4-.025-.616.175-.815.18-.18.4-.467.6-.7.2-.233.267-.4.4-.667.133-.267.067-.5-.033-.7-.1-.2-.9-2.167-1.234-2.967-.324-.78-.654-.674-.9-.686l-.767-.013c-.267 0-.7.1-1.067.5s-1.4 1.367-1.4 3.334 1.433 3.866 1.633 4.133c.2.267 2.82 4.3 6.833 6.033.954.413 1.7.66 2.28.845.958.305 1.83.262 2.52.159.768-.115 2.364-.967 2.697-1.9.334-.933.334-1.733.234-1.9-.1-.167-.367-.267-.767-.467z"/>
+    </svg>
+    <span class="whatsapp-tooltip">¡Cotiza tu proyecto!</span>
+  </a>
+
+  <script src="js/loader.js"></script>
 
 </body>
 </html>

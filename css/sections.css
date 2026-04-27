@@ -155,78 +155,124 @@
   gap: 7px;
 }
 
-/* ── Sobre mí & Redes ───────────────────────────────────── */
-.lol-banner {
-  position: relative;
-  border-radius: 18px;
-  overflow: hidden;
-  background: #0a1628;
-  border: 1px solid rgba(56, 189, 248, 0.2);
-  padding: 32px 36px;
-  margin-bottom: 16px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 24px;
-  align-items: center;
+/* ── Sección Cotizar ────────────────────────────────────── */
+.cotizar-intro {
+  margin-bottom: 48px;
 }
 
-.lol-banner::before {
-  content: "";
-  position: absolute;
-  top: -60px; right: -60px;
-  width: 240px; height: 240px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(74,222,128,.06) 0%, transparent 70%);
-  pointer-events: none;
-}
-
-.lol-badge {
-  font-size: 0.65rem;
+.cotizar-eyebrow {
+  font-size: 0.78rem;
   font-weight: 700;
-  color: #4ade80;
-  background: rgba(74, 222, 128, 0.1);
-  border: 1px solid rgba(74, 222, 128, 0.25);
-  border-radius: 999px;
-  padding: 4px 12px;
-  display: inline-flex;
+  color: var(--accent);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.cotizar-intro h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  line-height: 1.1;
+}
+
+.cotizar-intro h2 span { color: var(--accent); }
+
+/* Steps */
+.cotizar-steps {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  margin-bottom: 48px;
+}
+
+.cstep {
+  flex: 1;
+  padding: 0 8px;
+}
+
+.cstep-line {
+  width: 60px;
+  height: 1px;
+  background: var(--border);
+  margin-top: 22px;
+  flex-shrink: 0;
+  border-top: 1px dashed rgba(56, 189, 248, 0.35);
+}
+
+.cstep-num {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(56, 189, 248, 0.4);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 800;
+  display: flex;
   align-items: center;
-  gap: 6px;
+  justify-content: center;
+  margin-bottom: 14px;
+  letter-spacing: 1px;
+}
+
+.cstep h4 {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.cstep p {
+  font-size: 0.8rem;
+  color: var(--muted2);
+  line-height: 1.6;
+}
+
+/* Box del formulario */
+.cotizar-box {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 48px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 48px;
+  align-items: start;
+}
+
+.cotizar-badge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.cotizar-left h3 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.5px;
   margin-bottom: 12px;
 }
 
-.lol-badge::before {
-  content: "";
-  width: 6px; height: 6px;
-  border-radius: 50%;
-  background: #4ade80;
+.cotizar-left p {
+  font-size: 0.88rem;
+  color: var(--muted2);
+  line-height: 1.7;
 }
 
-.lol-left h2 {
-  font-size: 2rem;
-  font-weight: 800;
-  letter-spacing: -1px;
-  line-height: 1.1;
-  margin-bottom: 6px;
-  color: #e2f8ff;
+/* Form */
+.cotizar-form { display: flex; flex-direction: column; gap: 16px; }
+
+.cotizar-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
 }
 
-.lol-left h2 span { color: #7ee8ff; }
-.lol-left p { font-size: 0.85rem; color: var(--muted); margin-bottom: 20px; }
+.cotizar-field { display: flex; flex-direction: column; gap: 7px; }
 
-.lol-stats-row { display: flex; gap: 28px; }
-
-.lol-stat { display: flex; flex-direction: column; }
-
-.lol-stat-num {
-  font-size: 1.5rem;
-  font-weight: 800;
-  letter-spacing: -1px;
-  color: #e2f8ff;
-}
-
-.lol-stat-num.wr { color: #4ade80; }
-
-.lol-stat-label {
+.cotizar-field label {
   font-size: 0.65rem;
   font-weight: 700;
   letter-spacing: 2px;
@@ -234,193 +280,67 @@
   color: var(--muted);
 }
 
-.mains-col { display: flex; flex-direction: column; gap: 8px; }
-
-.main-pill {
-  padding: 8px 16px;
-  border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+.cotizar-field input,
+.cotizar-field select {
+  padding: 11px 14px;
   background: rgba(255, 255, 255, 0.04);
-  font-size: 0.82rem;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  transition: background 0.2s;
-}
-
-.main-pill:hover { background: rgba(255, 255, 255, 0.07); }
-
-.main-pill-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
-
-.main-pill-role {
-  font-size: 0.65rem;
-  font-weight: 600;
-  color: var(--muted);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.main-mastery {
-  margin-left: auto;
-  font-size: 0.7rem;
-  font-weight: 700;
-  color: #fbbf24;
-  letter-spacing: 0.5px;
-}
-
-.bottom-grid {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr 1fr;
-  gap: 14px;
-}
-
-/* Spotify */
-.spotify-card {
-  border-radius: 16px;
-  background: var(--surface);
-  border: 1px solid rgba(29, 185, 84, 0.2);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.spotify-header {
-  padding: 16px 18px 10px;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  border-bottom: 1px solid var(--border);
-}
-
-.spotify-dot {
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: #1DB954;
-  flex-shrink: 0;
-}
-
-.spotify-title { font-size: 0.82rem; font-weight: 700; }
-.spotify-sub   { font-size: 0.7rem; color: var(--muted); }
-
-.spotify-embed {
-  flex: 1;
-  min-height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.spotify-coming { font-size: 0.78rem; color: var(--muted); text-align: center; }
-
-.spotify-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.78rem;
-  font-weight: 700;
-  color: #1DB954;
-  background: rgba(29, 185, 84, 0.1);
-  border: 1px solid rgba(29, 185, 84, 0.3);
-  border-radius: 999px;
-  padding: 7px 16px;
-  transition: background 0.2s;
-  margin-top: 4px;
-}
-
-.spotify-btn:hover { background: rgba(29, 185, 84, 0.18); }
-
-/* Videojuegos */
-.games-card {
-  border-radius: 16px;
-  background: var(--surface);
   border: 1px solid var(--border);
-  padding: 18px;
+  border-radius: 9px;
+  color: var(--text);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.2s;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
-.card-label {
-  font-size: 0.62rem;
-  font-weight: 700;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 14px;
+.cotizar-field select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%2364748b' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  padding-right: 36px;
+  cursor: pointer;
 }
 
-.game-item {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 0;
-  border-bottom: 1px solid var(--border);
-}
-
-.game-item:last-child { border-bottom: none; }
-
-.game-dot { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
-.game-name { font-size: 0.84rem; font-weight: 700; }
-.game-sub  { font-size: 0.7rem; color: var(--muted); }
-
-/* Películas + Redes */
-.misc-card {
-  border-radius: 16px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  padding: 18px;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.movie-list { display: flex; flex-direction: column; gap: 7px; }
-
-.movie-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.82rem;
-  font-weight: 500;
-  color: var(--muted2);
-}
-
-.movie-bar {
-  width: 3px; height: 14px;
-  border-radius: 2px;
-  background: #f87171;
-  flex-shrink: 0;
-}
-
-.social-row { display: flex; gap: 8px; flex-wrap: wrap; }
-
-.social-pill {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 14px;
-  border-radius: 999px;
-  border: 1px solid var(--border);
-  background: rgba(255, 255, 255, 0.03);
-  font-size: 0.75rem;
-  font-weight: 700;
-  color: var(--muted2);
-  transition: border-color 0.2s, color 0.2s;
-}
-
-.social-pill:hover {
-  border-color: rgba(56, 189, 248, 0.3);
+.cotizar-field select option,
+.cotizar-field select optgroup {
+  background: #0d1117;
   color: var(--text);
 }
 
-.social-pill-dot { width: 6px; height: 6px; border-radius: 50%; }
+.cotizar-field input:focus,
+.cotizar-field select:focus {
+  border-color: rgba(56, 189, 248, 0.5);
+}
+
+.cotizar-field input::placeholder { color: rgba(100, 116, 139, 0.55); }
+
+.cotizar-btn {
+  padding: 14px;
+  background: #25d366;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+  margin-top: 4px;
+}
+
+.cotizar-btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
 
 /* Responsive */
 @media (max-width: 900px) {
-  .bottom-grid { grid-template-columns: 1fr; }
-  .lol-banner  { grid-template-columns: 1fr; }
-  .mains-col   { flex-direction: row; flex-wrap: wrap; }
+  .cotizar-box       { grid-template-columns: 1fr; gap: 28px; padding: 28px; }
+  .cotizar-steps     { flex-direction: column; gap: 24px; }
+  .cstep-line        { display: none; }
+  .cotizar-row       { grid-template-columns: 1fr; }
 }
 
 /* ── Proyectos ──────────────────────────────────────────── */
@@ -815,85 +735,3 @@
   margin-top: 12px;
 }
 
-/* Spotify móvil fallback (iOS Safari + Android) */
-.spotify-mobile-fallback {
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
-  padding: 20px;
-}
-
-.spotify-mobile-cover {
-  position: relative;
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-}
-
-.spotify-mobile-img {
-  width: 100%;
-  height: 180px;
-  object-fit: cover;
-  display: block;
-}
-
-.spotify-mobile-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, transparent 60%);
-  display: flex;
-  align-items: flex-end;
-  padding: 16px;
-}
-
-.spotify-mobile-playlist {
-  font-size: 1rem;
-  font-weight: 800;
-  color: #ffffff;
-  margin-bottom: 2px;
-}
-
-.spotify-mobile-by {
-  font-size: 0.75rem;
-  color: #1DB954;
-  font-weight: 600;
-}
-
-.spotify-mobile-desc {
-  font-size: 0.82rem;
-  color: var(--muted2);
-  line-height: 1.6;
-  text-align: center;
-  max-width: 280px;
-}
-
-.spotify-open-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 28px;
-  background: #1DB954;
-  color: #000;
-  font-weight: 700;
-  font-size: 0.88rem;
-  border-radius: 999px;
-  transition: opacity 0.2s, transform 0.2s;
-}
-
-.spotify-open-btn:hover {
-  opacity: 0.87;
-  transform: translateY(-1px);
-}
-
-/* iOS Safari */
-@supports (-webkit-touch-callout: none) {
-  .spotify-desktop { display: none !important; }
-  .spotify-mobile-fallback { display: flex !important; }
-}
-
-/* Android + cualquier pantalla táctil */
-@media (max-width: 768px) and (pointer: coarse) {
-  .spotify-desktop { display: none !important; }
-  .spotify-mobile-fallback { display: flex !important; }
-}
